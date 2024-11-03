@@ -26,6 +26,25 @@
     object-fit: cover;
     margin-bottom: 20px;
   }
+
+  /* Estilos para o Nome e Título */
+.profile-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-info h1 {
+  font-size: 1.8em;
+  color: #70e000;
+  margin-bottom: 5px;
+}
+
+.profile-info p {
+  font-size: 1.2em;
+  color: #ffffff;
+  opacity: 0.8; /* Deixa o texto um pouco mais discreto */
+}
+
   
   /* Container principal */
   .container {
