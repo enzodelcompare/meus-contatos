@@ -1,0 +1,127 @@
+/* Estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu Mono', monospace;
+  }
+  
+  /* Background e centralização */
+  body {
+    background-color: #121420;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Imagem de perfil */
+  .profile-image img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  /* Container principal */
+  .container {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #2c2b3c; /* Borda em tom mais claro */
+    background-color: #1b2432;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 90%;
+  }
+  
+  /* Título */
+  h1 {
+    color: #70e000;
+    margin-bottom: 20px;
+  }
+  
+  /* Links estilizados */
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .link-btn {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #403f4c;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .link-btn i {
+    font-size: 1.2em;
+  }
+  
+  .link-btn:hover {
+    background-color: #2c2b3c;
+    border-color: #70e000;
+    color: #70e000;
+  }
+
+  /* Estilos para o Footer */
+footer {
+    margin-top: 20px; /* Espaçamento acima do footer */
+    text-align: center; /* Centraliza o texto */
+    color: #ffffff; /* Cor do texto */
+    font-size: 0.9em; /* Tamanho da fonte */
+  }
+  
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .profile-image img {
+      width: 180px;
+      height: 180px;
+    }
+  
+    .container {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 1.5em; /* Ajusta o tamanho da fonte para telas menores */
+    }
+  
+    .link-btn {
+      font-size: 1.1em; /* Ajusta o tamanho da fonte dos links */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .profile-image img {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .container {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 1.3em; /* Ajusta ainda mais o tamanho da fonte para telas pequenas */
+    }
+  
+    .link-btn {
+      padding: 12px; /* Reduz o padding em telas pequenas */
+      font-size: 1em; /* Ajusta o tamanho da fonte dos links */
+    }
+  }
+  
