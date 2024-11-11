@@ -193,6 +193,12 @@ h1 {
   }
 }
 
+/* Estilo do botão de voltar */
+.back-btn {
+  margin-top: 10px;
+  font-size: 1em; /* Ajuste conforme necessário */
+}
+
 /* Estilos para o Footer */
 footer {
   margin-top: 20px; /* Espaçamento acima do footer */
