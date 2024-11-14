@@ -147,12 +147,20 @@ h1 {
   transition: transform 0.3s ease;
 }
 
-.project-card img {
+/*.project-card img {
   width: 200px;
   height: 200px;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 10px;
+}*/
+
+/* Ajuste para o banner ocupar toda a largura do cartão */
+.project-card img {
+  width: 100%; /* Faz a imagem ocupar toda a largura do cartão */
+  height: 150px; /* Define uma altura específica para o banner */
+  object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
+  border-radius: 8px 8px 0 0; /* Bordas arredondadas apenas no topo */
 }
 
 .project-card p {
@@ -245,5 +253,79 @@ footer {
   .link-btn {
       padding: 12px; /* Reduz o padding em telas pequenas */
       font-size: 1em; /* Ajusta o tamanho da fonte dos links */
+  }
+}
+
+/*
+########################################################################
+########## - TESTANDO VISUAL PARA A NOVA PÁGINA PORTFOLIO 2 - ##########
+########################################################################
+*/
+
+/* Ajustes para a grid de Portfólio em 2 colunas */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Estilos do Banner do Projeto */
+.project-banner {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Título e descrição do projeto */
+.project-card h2 {
+  font-size: 1.5em;
+  color: #70e000;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.project-description {
+  font-size: 1em;
+  opacity: 0.9;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* Rodapé do Projeto */
+.project-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-date {
+  font-size: 0.9em;
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+/* Estilo para o botão "Veja +" */
+.view-project-btn {
+  font-size: 1em;
+  padding: 8px 12px;
+  text-decoration: none;
+  background-color: #403f4c;
+  color: #ffffff;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  transition: background-color 0.3s ease;
+}
+
+.view-project-btn:hover {
+  background-color: #2c2b3c;
+  border-color: #70e000;
+  color: #70e000;
+}
+
+/* Responsividade: ajuste para telas menores */
+@media (max-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
   }
 }
